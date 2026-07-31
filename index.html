@@ -1,0 +1,294 @@
+<!doctype html>
+<html lang="zh-CN">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="description" content="SNDK、SKHY、MU、NBIS期权Skew、Call Wall与借券数据监控">
+  <title>Memory Squeeze Monitor</title>
+  <style>
+    :root {
+      color-scheme: dark;
+      --bg: #0c1017;
+      --panel: #141a24;
+      --panel-2: #19212d;
+      --text: #eef2f7;
+      --muted: #8f9bad;
+      --line: #293344;
+      --blue: #6ba5ff;
+      --green: #48c78e;
+      --yellow: #e7b95c;
+      --red: #ef7373;
+    }
+    * { box-sizing: border-box; }
+    body {
+      margin: 0;
+      background: var(--bg);
+      color: var(--text);
+      font-family: Inter, ui-sans-serif, system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", sans-serif;
+    }
+    main { max-width: 1440px; margin: 0 auto; padding: 30px 22px 60px; }
+    h1 { margin: 0; font-size: clamp(25px, 4vw, 38px); letter-spacing: -0.035em; }
+    h2 { margin: 0 0 14px; font-size: 18px; }
+    p { line-height: 1.65; }
+    .topbar { display: flex; justify-content: space-between; gap: 24px; align-items: flex-start; }
+    .subtitle { color: var(--muted); margin: 8px 0 0; }
+    .status { text-align: right; color: var(--muted); font-size: 13px; line-height: 1.7; }
+    .status strong { color: var(--green); font-weight: 650; }
+    button {
+      margin-top: 8px;
+      border: 1px solid var(--line);
+      color: var(--text);
+      background: var(--panel-2);
+      border-radius: 8px;
+      padding: 8px 12px;
+      cursor: pointer;
+    }
+    button:hover { border-color: var(--blue); }
+    .notice {
+      margin: 24px 0;
+      padding: 14px 16px;
+      background: var(--panel);
+      border-left: 3px solid var(--yellow);
+      color: var(--muted);
+      border-radius: 4px 10px 10px 4px;
+    }
+    .cards {
+      display: grid;
+      grid-template-columns: repeat(4, minmax(0, 1fr));
+      gap: 14px;
+      margin-bottom: 26px;
+    }
+    .card {
+      background: var(--panel);
+      border: 1px solid var(--line);
+      border-radius: 12px;
+      padding: 17px;
+    }
+    .card-head { display: flex; justify-content: space-between; align-items: center; gap: 8px; }
+    .ticker { font-size: 18px; font-weight: 750; letter-spacing: .03em; }
+    .badge {
+      border-radius: 999px;
+      padding: 3px 8px;
+      font-size: 11px;
+      background: var(--panel-2);
+      color: var(--muted);
+    }
+    .badge.mild { color: var(--yellow); }
+    .badge.strong { color: var(--red); }
+    .price { font-size: 27px; font-weight: 700; margin: 18px 0 4px; }
+    .up { color: var(--green); }
+    .down { color: var(--red); }
+    .metrics { display: grid; grid-template-columns: 1fr 1fr; gap: 12px 8px; margin-top: 18px; }
+    .metric-label { color: var(--muted); font-size: 11px; margin-bottom: 3px; }
+    .metric-value { font-size: 14px; font-weight: 620; }
+    .section {
+      background: var(--panel);
+      border: 1px solid var(--line);
+      border-radius: 12px;
+      padding: 18px;
+      margin-top: 16px;
+      overflow: hidden;
+    }
+    .table-wrap { overflow-x: auto; }
+    table { width: 100%; border-collapse: collapse; min-width: 1040px; }
+    th, td { padding: 11px 10px; text-align: right; border-bottom: 1px solid var(--line); font-size: 13px; }
+    th { color: var(--muted); font-weight: 600; white-space: nowrap; }
+    th:first-child, td:first-child { text-align: left; }
+    tr:last-child td { border-bottom: 0; }
+    .footnotes { color: var(--muted); font-size: 12px; margin-top: 14px; }
+    .history-grid { display: grid; grid-template-columns: repeat(2, 1fr); gap: 14px; }
+    .chart-box { background: var(--panel-2); border-radius: 9px; padding: 12px; min-height: 150px; }
+    .chart-title { display: flex; justify-content: space-between; color: var(--muted); font-size: 12px; }
+    svg { width: 100%; height: 105px; overflow: visible; }
+    .axis { stroke: var(--line); stroke-width: 1; }
+    .skew-line { fill: none; stroke: var(--blue); stroke-width: 2; }
+    .borrow-line { fill: none; stroke: var(--yellow); stroke-width: 1.5; opacity: .9; }
+    .empty { color: var(--muted); font-size: 13px; padding: 42px 0; text-align: center; }
+    footer { color: var(--muted); font-size: 12px; margin-top: 24px; line-height: 1.7; }
+    @media (max-width: 1050px) { .cards { grid-template-columns: repeat(2, 1fr); } }
+    @media (max-width: 680px) {
+      main { padding: 22px 14px 40px; }
+      .topbar { flex-direction: column; }
+      .status { text-align: left; }
+      .cards, .history-grid { grid-template-columns: 1fr; }
+    }
+  </style>
+</head>
+<body>
+  <main>
+    <header class="topbar">
+      <div>
+        <h1>Memory Squeeze Monitor</h1>
+        <p class="subtitle">SNDK · SKHY · MU · NBIS｜25Δ Skew、上方Call Wall与借券监控</p>
+      </div>
+      <div class="status">
+        <div><strong id="state">正在加载</strong></div>
+        <div>数据生成：<span id="generated">—</span></div>
+        <div>下一轮计划刷新：<span id="countdown">—</span></div>
+        <button id="reload">检查新数据</button>
+      </div>
+    </header>
+
+    <div class="notice">
+      页面每分钟检查GitHub Pages上的最新JSON；GitHub Actions每30分钟抓取一次Cboe与IBorrowDesk。定时任务可能因GitHub排队延迟数分钟。
+    </div>
+
+    <section id="cards" class="cards"></section>
+
+    <section class="section">
+      <h2>指标总览</h2>
+      <div class="table-wrap">
+        <table>
+          <thead>
+            <tr>
+              <th>Ticker</th><th>现价</th><th>涨跌</th><th>30D IV</th>
+              <th>25Δ Skew</th><th>Skew趋势</th><th>上方Call Wall</th><th>距离</th>
+              <th>Call OI</th><th>借券费率</th><th>可借量</th><th>可借量5日</th>
+            </tr>
+          </thead>
+          <tbody id="overview"></tbody>
+        </table>
+      </div>
+      <p class="footnotes">Skew = 25Δ Put IV − 25Δ Call IV，线性插值至30天。Call Wall统计未来45天、现价以上、150%现价以内Call OI最大的行权价。</p>
+    </section>
+
+    <section class="section">
+      <h2>Skew与借券费率历史</h2>
+      <div id="history" class="history-grid"></div>
+    </section>
+
+    <footer>
+      <div>期权来源：Cboe延迟行情。借券来源：IBorrowDesk / Interactive Brokers指示性库存。</div>
+      <div>限制：Call OI无法识别做市商净Gamma方向；IBKR库存不代表全市场。SKHY期权于2026-07-14上市，历史可比性较弱。本页不构成投资建议。</div>
+    </footer>
+  </main>
+
+  <script>
+    let latestPayload = null;
+
+    const fmt = (value, digits = 1) =>
+      value == null || Number.isNaN(Number(value))
+        ? "—"
+        : Number(value).toLocaleString("en-US", { maximumFractionDigits: digits, minimumFractionDigits: digits });
+    const money = value => value == null ? "—" : `$${fmt(value, value < 100 ? 2 : 1)}`;
+    const pct = value => value == null ? "—" : `${value >= 0 ? "+" : ""}${fmt(value, 1)}%`;
+    const shares = value => value == null ? "—" : `${fmt(value / 1_000_000, 2)}m`;
+    const trendText = trend => ({
+      rebounding: "回升",
+      falling: "下降",
+      flat: "持平",
+      building_history: "积累中"
+    })[trend] || "—";
+    const coveringText = signal => ({ strong: "较强回补", mild: "温和回补", none: "未出现" })[signal] || "—";
+
+    function card(item) {
+      const skew = item.skew_30d;
+      const wall = item.call_walls?.[0];
+      const borrow = item.borrow;
+      const moveClass = item.price_change_pct >= 0 ? "up" : "down";
+      return `
+        <article class="card">
+          <div class="card-head">
+            <span class="ticker">${item.ticker}</span>
+            <span class="badge ${borrow.covering_proxy}">${coveringText(borrow.covering_proxy)}</span>
+          </div>
+          <div class="price">${money(item.spot)}</div>
+          <div class="${moveClass}">${pct(item.price_change_pct)}</div>
+          <div class="metrics">
+            <div><div class="metric-label">30D 25Δ Skew</div><div class="metric-value">${skew ? `${fmt(skew.skew, 1)} vol` : "—"}</div></div>
+            <div><div class="metric-label">Skew趋势</div><div class="metric-value">${trendText(item.skew_trend)}</div></div>
+            <div><div class="metric-label">上方Call Wall</div><div class="metric-value">${wall ? money(wall.strike) : "—"}</div></div>
+            <div><div class="metric-label">距Call Wall</div><div class="metric-value">${wall ? pct(wall.distance_pct) : "—"}</div></div>
+            <div><div class="metric-label">借券费率</div><div class="metric-value">${fmt(borrow.fee_pct, 2)}%</div></div>
+            <div><div class="metric-label">可借量</div><div class="metric-value">${shares(borrow.available)}</div></div>
+          </div>
+        </article>`;
+    }
+
+    function overviewRow(item) {
+      const skew = item.skew_30d;
+      const wall = item.call_walls?.[0];
+      return `<tr>
+        <td><strong>${item.ticker}</strong>${item.low_history_confidence ? " *" : ""}</td>
+        <td>${money(item.spot)}</td><td class="${item.price_change_pct >= 0 ? "up" : "down"}">${pct(item.price_change_pct)}</td>
+        <td>${fmt(item.iv30_pct, 1)}%</td><td>${skew ? `${fmt(skew.skew, 1)} vol` : "—"}</td>
+        <td>${trendText(item.skew_trend)}</td><td>${wall ? money(wall.strike) : "—"}</td>
+        <td>${wall ? pct(wall.distance_pct) : "—"}</td><td>${wall ? fmt(wall.oi, 0) : "—"}</td>
+        <td>${fmt(item.borrow.fee_pct, 2)}%</td><td>${shares(item.borrow.available)}</td>
+        <td>${pct(item.borrow.available_change_5d_pct)}</td>
+      </tr>`;
+    }
+
+    function polyline(values, width = 440, height = 90) {
+      if (values.length < 2) return null;
+      const min = Math.min(...values);
+      const max = Math.max(...values);
+      const range = max - min || 1;
+      return values.map((value, index) => {
+        const x = 5 + index * ((width - 10) / (values.length - 1));
+        const y = height - 5 - ((value - min) / range) * (height - 10);
+        return `${x},${y}`;
+      }).join(" ");
+    }
+
+    function chart(ticker, records) {
+      const points = records.filter(record => record.ticker === ticker).slice(-96);
+      const skewValues = points.map(point => point.skew_30d?.skew).filter(value => value != null);
+      const feeValues = points.map(point => point.borrow?.fee_pct).filter(value => value != null);
+      const skewLine = polyline(skewValues);
+      const feeLine = polyline(feeValues);
+      if (!skewLine || !feeLine) {
+        return `<div class="chart-box"><div class="chart-title"><strong>${ticker}</strong><span>等待更多快照</span></div><div class="empty">至少需要两个不同市场时间点</div></div>`;
+      }
+      return `<div class="chart-box">
+        <div class="chart-title"><strong>${ticker}</strong><span>蓝：Skew｜黄：借券费率</span></div>
+        <svg viewBox="0 0 440 90" preserveAspectRatio="none" aria-label="${ticker}历史趋势">
+          <line class="axis" x1="5" y1="85" x2="435" y2="85"></line>
+          <polyline class="skew-line" points="${skewLine}"></polyline>
+          <polyline class="borrow-line" points="${feeLine}"></polyline>
+        </svg>
+      </div>`;
+    }
+
+    function updateCountdown() {
+      if (!latestPayload) return;
+      const generated = new Date(latestPayload.generated_at).getTime();
+      const next = generated + latestPayload.refresh_interval_minutes * 60_000;
+      const remaining = Math.max(0, next - Date.now());
+      const minutes = Math.floor(remaining / 60_000);
+      const seconds = Math.floor((remaining % 60_000) / 1000);
+      document.getElementById("countdown").textContent =
+        remaining > 0 ? `${minutes}:${String(seconds).padStart(2, "0")}` : "等待GitHub任务";
+    }
+
+    async function loadData() {
+      const stamp = Date.now();
+      const [latestResponse, historyResponse] = await Promise.all([
+        fetch(`data/latest.json?v=${stamp}`),
+        fetch(`data/history.json?v=${stamp}`)
+      ]);
+      if (!latestResponse.ok || !historyResponse.ok) throw new Error("数据文件读取失败");
+      const [latest, history] = await Promise.all([latestResponse.json(), historyResponse.json()]);
+      latestPayload = latest;
+      document.getElementById("state").textContent = "数据正常";
+      document.getElementById("generated").textContent = new Date(latest.generated_at).toLocaleString("zh-CN");
+      document.getElementById("cards").innerHTML = latest.tickers.map(card).join("");
+      document.getElementById("overview").innerHTML = latest.tickers.map(overviewRow).join("");
+      document.getElementById("history").innerHTML =
+        latest.tickers.map(item => chart(item.ticker, history)).join("");
+      updateCountdown();
+    }
+
+    document.getElementById("reload").addEventListener("click", () =>
+      loadData().catch(error => {
+        document.getElementById("state").textContent = error.message;
+      })
+    );
+    loadData().catch(error => {
+      document.getElementById("state").textContent = error.message;
+    });
+    setInterval(updateCountdown, 1000);
+    setInterval(() => loadData().catch(() => {}), 60_000);
+  </script>
+</body>
+</html>
