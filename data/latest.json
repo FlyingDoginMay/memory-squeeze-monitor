@@ -1,6 +1,6 @@
 {
-  "generated_at": "2026-08-01T16:58:07.100936+00:00",
-  "market_time": "2026-08-01 13:10:26",
+  "generated_at": "2026-08-01T18:03:31.691717+00:00",
+  "market_time": "2026-08-01 18:02:17",
   "refresh_interval_minutes": 30,
   "tickers": [
     {
@@ -115,61 +115,61 @@
     },
     {
       "ticker": "SKHY",
-      "market_time": "2026-08-01 03:43:56",
+      "market_time": "2026-08-01 17:58:51",
       "spot": 142.5972,
       "price_change_pct": -3.667,
-      "iv30_pct": 113.865,
+      "iv30_pct": 113.813,
       "skew_30d": {
         "expiry": "2026-08-28/2026-09-04",
         "dte": 30,
-        "skew": 1.38,
-        "put_iv": 115.004,
-        "call_iv": 113.624,
+        "skew": 1.249,
+        "put_iv": 114.933,
+        "call_iv": 113.684,
         "method": "linear_interpolation"
       },
       "skew_term_structure": [
         {
           "expiry": "2026-08-14",
           "dte": 13,
-          "skew": 7.7,
-          "put_iv": 126.79,
-          "call_iv": 119.09,
+          "skew": 6.82,
+          "put_iv": 126.36,
+          "call_iv": 119.54,
           "put_strike": 125.0,
           "call_strike": 175.0
         },
         {
           "expiry": "2026-08-21",
           "dte": 20,
-          "skew": 3.94,
-          "put_iv": 120.59,
-          "call_iv": 116.65,
+          "skew": 3.52,
+          "put_iv": 120.38,
+          "call_iv": 116.86,
           "put_strike": 125.0,
           "call_strike": 182.5
         },
         {
           "expiry": "2026-08-28",
           "dte": 27,
-          "skew": 3.36,
-          "put_iv": 116.59,
-          "call_iv": 113.23,
+          "skew": 3.28,
+          "put_iv": 116.54,
+          "call_iv": 113.26,
           "put_strike": 120.0,
           "call_strike": 190.0
         },
         {
           "expiry": "2026-09-04",
           "dte": 34,
-          "skew": -1.26,
-          "put_iv": 112.89,
-          "call_iv": 114.15,
+          "skew": -1.46,
+          "put_iv": 112.79,
+          "call_iv": 114.25,
           "put_strike": 120.0,
           "call_strike": 200.0
         },
         {
           "expiry": "2026-09-18",
           "dte": 48,
-          "skew": 1.89,
-          "put_iv": 110.84,
-          "call_iv": 108.95,
+          "skew": 1.71,
+          "put_iv": 110.75,
+          "call_iv": 109.04,
           "put_strike": 120.0,
           "call_strike": 205.0
         }
@@ -187,7 +187,7 @@
           "oi": 9267,
           "volume": 1388,
           "distance_pct": 33.24,
-          "gamma_concentration": 1278907.0
+          "gamma_concentration": 1279114.0
         },
         {
           "strike": 175.0,
@@ -220,12 +220,12 @@
         "covering_proxy": "none"
       },
       "low_history_confidence": true,
-      "skew_change": 0.0,
+      "skew_change": -0.131,
       "skew_trend": "flat"
     },
     {
       "ticker": "MU",
-      "market_time": "2026-08-01 13:10:26",
+      "market_time": "2026-08-01 18:02:17",
       "spot": 812.465,
       "price_change_pct": -6.273,
       "iv30_pct": 91.174,
@@ -348,7 +348,7 @@
         "covering_proxy": "none"
       },
       "low_history_confidence": false,
-      "skew_change": 0.183,
+      "skew_change": 0.0,
       "skew_trend": "flat"
     },
     {
