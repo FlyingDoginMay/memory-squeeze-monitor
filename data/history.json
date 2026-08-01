@@ -1230,5 +1230,33 @@
       "available_change_5d_pct": 25.0,
       "covering_proxy": "none"
     }
+  },
+  {
+    "ticker": "SNDK",
+    "market_time": "2026-08-01 05:00:39",
+    "spot": 1205.0,
+    "skew_30d": {
+      "expiry": "2026-08-28/2026-09-04",
+      "dte": 30,
+      "skew": 5.054,
+      "put_iv": 136.343,
+      "call_iv": 131.289,
+      "method": "linear_interpolation"
+    },
+    "call_wall": {
+      "strike": 1600.0,
+      "oi": 4729,
+      "volume": 1716,
+      "distance_pct": 32.78,
+      "gamma_concentration": 5489526.0
+    },
+    "borrow": {
+      "as_of": "2026-07-31",
+      "fee_pct": 0.2782,
+      "available": 2800000,
+      "fee_change_5d_pp": -0.0335,
+      "available_change_5d_pct": -3.45,
+      "covering_proxy": "none"
+    }
   }
 ]
