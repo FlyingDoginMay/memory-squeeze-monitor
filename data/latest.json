@@ -1,26 +1,26 @@
 {
-  "generated_at": "2026-08-02T22:55:36.633262+00:00",
-  "market_time": "2026-08-01 23:30:59",
+  "generated_at": "2026-08-02T23:58:18.867660+00:00",
+  "market_time": "2026-08-02 23:38:58",
   "refresh_interval_minutes": 30,
   "tickers": [
     {
       "ticker": "SNDK",
-      "market_time": "2026-08-01 05:00:39",
+      "market_time": "2026-08-02 23:37:49",
       "spot": 1205.0,
       "price_change_pct": -5.361,
       "iv30_pct": 133.888,
       "skew_30d": {
         "expiry": "2026-08-28/2026-09-04",
         "dte": 30,
-        "skew": 5.054,
-        "put_iv": 136.343,
-        "call_iv": 131.289,
+        "skew": 5.316,
+        "put_iv": 135.777,
+        "call_iv": 130.461,
         "method": "linear_interpolation"
       },
       "skew_term_structure": [
         {
           "expiry": "2026-08-14",
-          "dte": 13,
+          "dte": 12,
           "skew": 7.3,
           "put_iv": 155.24,
           "call_iv": 147.94,
@@ -29,7 +29,7 @@
         },
         {
           "expiry": "2026-08-21",
-          "dte": 20,
+          "dte": 19,
           "skew": 7.44,
           "put_iv": 144.26,
           "call_iv": 136.82,
@@ -38,7 +38,7 @@
         },
         {
           "expiry": "2026-08-28",
-          "dte": 27,
+          "dte": 26,
           "skew": 4.27,
           "put_iv": 138.04,
           "call_iv": 133.77,
@@ -47,7 +47,7 @@
         },
         {
           "expiry": "2026-09-04",
-          "dte": 34,
+          "dte": 33,
           "skew": 6.1,
           "put_iv": 134.08,
           "call_iv": 127.98,
@@ -56,12 +56,21 @@
         },
         {
           "expiry": "2026-09-18",
-          "dte": 48,
+          "dte": 47,
           "skew": 6.27,
           "put_iv": 127.21,
           "call_iv": 120.94,
           "put_strike": 990.0,
           "call_strike": 1820.0
+        },
+        {
+          "expiry": "2026-10-16",
+          "dte": 75,
+          "skew": 5.76,
+          "put_iv": 122.11,
+          "call_iv": 116.35,
+          "put_strike": 980.0,
+          "call_strike": 2040.0
         }
       ],
       "call_walls": [
@@ -110,27 +119,27 @@
         "covering_proxy": "none"
       },
       "low_history_confidence": false,
-      "skew_change": 0.335,
+      "skew_change": 0.262,
       "skew_trend": "flat"
     },
     {
       "ticker": "SKHY",
-      "market_time": "2026-08-01 17:58:51",
+      "market_time": "2026-08-02 23:38:58",
       "spot": 142.5972,
       "price_change_pct": -3.667,
       "iv30_pct": 113.813,
       "skew_30d": {
         "expiry": "2026-08-28/2026-09-04",
         "dte": 30,
-        "skew": 1.249,
-        "put_iv": 114.933,
-        "call_iv": 113.684,
+        "skew": 0.571,
+        "put_iv": 114.397,
+        "call_iv": 113.826,
         "method": "linear_interpolation"
       },
       "skew_term_structure": [
         {
           "expiry": "2026-08-14",
-          "dte": 13,
+          "dte": 12,
           "skew": 6.82,
           "put_iv": 126.36,
           "call_iv": 119.54,
@@ -139,7 +148,7 @@
         },
         {
           "expiry": "2026-08-21",
-          "dte": 20,
+          "dte": 19,
           "skew": 3.52,
           "put_iv": 120.38,
           "call_iv": 116.86,
@@ -148,7 +157,7 @@
         },
         {
           "expiry": "2026-08-28",
-          "dte": 27,
+          "dte": 26,
           "skew": 3.28,
           "put_iv": 116.54,
           "call_iv": 113.26,
@@ -157,7 +166,7 @@
         },
         {
           "expiry": "2026-09-04",
-          "dte": 34,
+          "dte": 33,
           "skew": -1.46,
           "put_iv": 112.79,
           "call_iv": 114.25,
@@ -166,12 +175,21 @@
         },
         {
           "expiry": "2026-09-18",
-          "dte": 48,
+          "dte": 47,
           "skew": 1.71,
           "put_iv": 110.75,
           "call_iv": 109.04,
           "put_strike": 120.0,
           "call_strike": 205.0
+        },
+        {
+          "expiry": "2026-10-16",
+          "dte": 75,
+          "skew": 1.28,
+          "put_iv": 105.62,
+          "call_iv": 104.34,
+          "put_strike": 120.0,
+          "call_strike": 220.0
         }
       ],
       "call_walls": [
@@ -220,7 +238,7 @@
         "covering_proxy": "none"
       },
       "low_history_confidence": true,
-      "skew_change": -0.131,
+      "skew_change": -0.678,
       "skew_trend": "flat"
     },
     {
