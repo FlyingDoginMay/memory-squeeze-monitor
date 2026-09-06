@@ -5260,5 +5260,33 @@
       "available_change_5d_pct": -5.26,
       "covering_proxy": "none"
     }
+  },
+  {
+    "ticker": "NBIS",
+    "market_time": "2026-09-05 23:37:49",
+    "spot": 225.1247,
+    "skew_30d": {
+      "expiry": "2026-10-02/2026-10-09",
+      "dte": 30,
+      "skew": -2.956,
+      "put_iv": 83.104,
+      "call_iv": 86.06,
+      "method": "linear_interpolation"
+    },
+    "call_wall": {
+      "strike": 300.0,
+      "oi": 13120,
+      "volume": 4088,
+      "distance_pct": 33.26,
+      "gamma_concentration": 2175599.0
+    },
+    "borrow": {
+      "as_of": "2026-09-04",
+      "fee_pct": 0.4591,
+      "available": 7200000,
+      "fee_change_5d_pp": -0.07,
+      "available_change_5d_pct": -5.26,
+      "covering_proxy": "none"
+    }
   }
 ]
