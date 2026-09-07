@@ -5288,5 +5288,33 @@
       "available_change_5d_pct": -5.26,
       "covering_proxy": "none"
     }
+  },
+  {
+    "ticker": "MU",
+    "market_time": "2026-09-06 23:32:55",
+    "spot": 1014.91,
+    "skew_30d": {
+      "expiry": "2026-10-02/2026-10-09",
+      "dte": 30,
+      "skew": -3.023,
+      "put_iv": 65.053,
+      "call_iv": 68.076,
+      "method": "linear_interpolation"
+    },
+    "call_wall": {
+      "strike": 1100.0,
+      "oi": 18521,
+      "volume": 31697,
+      "distance_pct": 8.38,
+      "gamma_concentration": 45675372.0
+    },
+    "borrow": {
+      "as_of": "2026-09-04",
+      "fee_pct": 0.25,
+      "available": 10000000,
+      "fee_change_5d_pp": 0.0,
+      "available_change_5d_pct": 0.0,
+      "covering_proxy": "none"
+    }
   }
 ]
