@@ -1,14 +1,14 @@
 {
-  "generated_at": "2026-09-07T12:55:51.564784+00:00",
-  "market_time": "2026-09-07 12:45:52",
+  "generated_at": "2026-09-07T18:07:33.884579+00:00",
+  "market_time": "2026-09-07 18:00:12",
   "refresh_interval_minutes": 30,
   "tickers": [
     {
       "ticker": "SNDK",
-      "market_time": "2026-09-07 12:45:52",
+      "market_time": "2026-09-07 17:59:02",
       "spot": 1734.0062,
       "price_change_pct": 10.633,
-      "iv30_pct": 75.221,
+      "iv30_pct": 75.236,
       "skew_30d": {
         "expiry": "2026-10-02/2026-10-09",
         "dte": 30,
@@ -133,10 +133,10 @@
     },
     {
       "ticker": "SKHY",
-      "market_time": "2026-09-07 11:18:09",
+      "market_time": "2026-09-07 17:30:06",
       "spot": 175.0592,
       "price_change_pct": 7.525,
-      "iv30_pct": 61.711,
+      "iv30_pct": 61.729,
       "skew_30d": {
         "expiry": "2026-10-02/2026-10-09",
         "dte": 30,
@@ -256,15 +256,15 @@
         "covering_proxy": "none"
       },
       "low_history_confidence": true,
-      "skew_change": -0.148,
+      "skew_change": 0.0,
       "skew_trend": "flat"
     },
     {
       "ticker": "MU",
-      "market_time": "2026-09-07 12:28:06",
+      "market_time": "2026-09-07 17:56:57",
       "spot": 1014.91,
       "price_change_pct": 5.748,
-      "iv30_pct": 66.338,
+      "iv30_pct": 66.404,
       "skew_30d": {
         "expiry": "2026-10-02/2026-10-09",
         "dte": 30,
@@ -384,15 +384,15 @@
         "covering_proxy": "none"
       },
       "low_history_confidence": false,
-      "skew_change": -0.026,
+      "skew_change": 0.0,
       "skew_trend": "flat"
     },
     {
       "ticker": "NBIS",
-      "market_time": "2026-09-07 12:26:11",
+      "market_time": "2026-09-07 18:00:12",
       "spot": 225.1247,
       "price_change_pct": 6.961,
-      "iv30_pct": 82.203,
+      "iv30_pct": 82.195,
       "skew_30d": {
         "expiry": "2026-10-02/2026-10-09",
         "dte": 30,
@@ -512,8 +512,8 @@
         "covering_proxy": "none"
       },
       "low_history_confidence": false,
-      "skew_change": 2.123,
-      "skew_trend": "rebounding"
+      "skew_change": 0.0,
+      "skew_trend": "flat"
     }
   ],
   "methodology": {
