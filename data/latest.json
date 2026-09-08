@@ -1,6 +1,6 @@
 {
-  "generated_at": "2026-09-08T04:22:23.014520+00:00",
-  "market_time": "2026-09-08 03:59:27",
+  "generated_at": "2026-09-08T08:58:36.669218+00:00",
+  "market_time": "2026-09-08 08:36:51",
   "refresh_interval_minutes": 30,
   "tickers": [
     {
@@ -261,10 +261,10 @@
     },
     {
       "ticker": "MU",
-      "market_time": "2026-09-08 03:54:52",
-      "spot": 1014.91,
-      "price_change_pct": 5.748,
-      "iv30_pct": 66.432,
+      "market_time": "2026-09-08 08:36:51",
+      "spot": 1022.2,
+      "price_change_pct": 0.597,
+      "iv30_pct": 66.581,
       "skew_30d": {
         "expiry": "2026-10-02/2026-10-09",
         "dte": 30,
@@ -343,36 +343,36 @@
           "strike": 1100.0,
           "oi": 25053,
           "volume": 31768,
-          "distance_pct": 8.38,
-          "gamma_concentration": 65589489.0
+          "distance_pct": 7.61,
+          "gamma_concentration": 66535119.0
         },
         {
           "strike": 1200.0,
           "oi": 19638,
           "volume": 16591,
-          "distance_pct": 18.24,
-          "gamma_concentration": 27708962.0
+          "distance_pct": 17.39,
+          "gamma_concentration": 28108453.0
         },
         {
           "strike": 1050.0,
           "oi": 15622,
           "volume": 26880,
-          "distance_pct": 3.46,
-          "gamma_concentration": 61373011.0
+          "distance_pct": 2.72,
+          "gamma_concentration": 62257850.0
         },
         {
           "strike": 1500.0,
           "oi": 13864,
           "volume": 2159,
-          "distance_pct": 47.8,
-          "gamma_concentration": 3717938.0
+          "distance_pct": 46.74,
+          "gamma_concentration": 3771541.0
         },
         {
           "strike": 1300.0,
           "oi": 12086,
           "volume": 3301,
-          "distance_pct": 28.09,
-          "gamma_concentration": 8959308.0
+          "distance_pct": 27.18,
+          "gamma_concentration": 9088478.0
         }
       ],
       "borrow": {
@@ -384,7 +384,7 @@
         "covering_proxy": "none"
       },
       "low_history_confidence": false,
-      "skew_change": -0.025,
+      "skew_change": 0.0,
       "skew_trend": "flat"
     },
     {
