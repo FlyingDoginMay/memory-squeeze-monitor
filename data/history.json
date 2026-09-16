@@ -9992,5 +9992,95 @@
       "available_change_5d_pct": 0.0,
       "covering_proxy": "none"
     }
+  },
+  {
+    "ticker": "SNDK",
+    "market_time": "2026-09-16 01:30:07",
+    "spot": 1526.0,
+    "skew_30d": {
+      "expiry": "2026-10-16",
+      "dte": 30,
+      "skew": -1.48,
+      "put_iv": 67.95,
+      "call_iv": 69.43,
+      "put_strike": 1360.0,
+      "call_strike": 1800.0,
+      "method": "nearest"
+    },
+    "call_wall": {
+      "strike": 2000.0,
+      "oi": 5893,
+      "volume": 1656,
+      "distance_pct": 31.06,
+      "gamma_concentration": 3538656.0
+    },
+    "borrow": {
+      "as_of": "2026-09-15",
+      "fee_pct": 0.25,
+      "available": 2500000,
+      "fee_change_5d_pp": -0.2127,
+      "available_change_5d_pct": 31.58,
+      "covering_proxy": "mild"
+    }
+  },
+  {
+    "ticker": "MU",
+    "market_time": "2026-09-16 01:29:12",
+    "spot": 925.8274,
+    "skew_30d": {
+      "expiry": "2026-10-16",
+      "dte": 30,
+      "skew": -1.59,
+      "put_iv": 58.66,
+      "call_iv": 60.25,
+      "put_strike": 840.0,
+      "call_strike": 1070.0,
+      "method": "nearest"
+    },
+    "call_wall": {
+      "strike": 1000.0,
+      "oi": 31405,
+      "volume": 22310,
+      "distance_pct": 8.01,
+      "gamma_concentration": 74641006.0
+    },
+    "borrow": {
+      "as_of": "2026-09-15",
+      "fee_pct": 0.25,
+      "available": 10000000,
+      "fee_change_5d_pp": 0.0,
+      "available_change_5d_pct": 0.0,
+      "covering_proxy": "none"
+    }
+  },
+  {
+    "ticker": "NBIS",
+    "market_time": "2026-09-16 01:30:51",
+    "spot": 207.17,
+    "skew_30d": {
+      "expiry": "2026-10-16",
+      "dte": 30,
+      "skew": -2.21,
+      "put_iv": 79.94,
+      "call_iv": 82.15,
+      "put_strike": 185.0,
+      "call_strike": 250.0,
+      "method": "nearest"
+    },
+    "call_wall": {
+      "strike": 300.0,
+      "oi": 14486,
+      "volume": 1220,
+      "distance_pct": 44.81,
+      "gamma_concentration": 1052414.0
+    },
+    "borrow": {
+      "as_of": "2026-09-15",
+      "fee_pct": 0.4426,
+      "available": 7300000,
+      "fee_change_5d_pp": -0.0183,
+      "available_change_5d_pct": 8.96,
+      "covering_proxy": "mild"
+    }
   }
 ]
