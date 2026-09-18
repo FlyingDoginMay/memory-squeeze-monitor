@@ -1,12 +1,12 @@
 {
-  "generated_at": "2026-09-18T21:25:26.361310+00:00",
-  "market_time": "2026-09-18 21:25:04",
+  "generated_at": "2026-09-18T23:28:36.988167+00:00",
+  "market_time": "2026-09-18 23:28:18",
   "refresh_interval_minutes": 30,
   "tickers": [
     {
       "ticker": "SNDK",
-      "market_time": "2026-09-18 21:24:59",
-      "spot": 1796.0459,
+      "market_time": "2026-09-18 23:28:13",
+      "spot": 1796.5,
       "price_change_pct": 10.991,
       "iv30_pct": 70.206,
       "skew_30d": {
@@ -87,36 +87,36 @@
           "strike": 1800.0,
           "oi": 7099,
           "volume": 25218,
-          "distance_pct": 0.22,
-          "gamma_concentration": 336961199.0
+          "distance_pct": 0.19,
+          "gamma_concentration": 337131611.0
         },
         {
           "strike": 2000.0,
           "oi": 6249,
           "volume": 5222,
-          "distance_pct": 11.36,
-          "gamma_concentration": 10305402.0
+          "distance_pct": 11.33,
+          "gamma_concentration": 10310614.0
         },
         {
           "strike": 2200.0,
           "oi": 3297,
           "volume": 1147,
-          "distance_pct": 22.49,
-          "gamma_concentration": 2001920.0
+          "distance_pct": 22.46,
+          "gamma_concentration": 2002932.0
         },
         {
           "strike": 1900.0,
           "oi": 2855,
           "volume": 4134,
-          "distance_pct": 5.79,
-          "gamma_concentration": 8577351.0
+          "distance_pct": 5.76,
+          "gamma_concentration": 8581689.0
         },
         {
           "strike": 2500.0,
           "oi": 2752,
           "volume": 1837,
-          "distance_pct": 39.19,
-          "gamma_concentration": 891283.0
+          "distance_pct": 39.16,
+          "gamma_concentration": 891734.0
         }
       ],
       "borrow": {
@@ -128,13 +128,13 @@
         "covering_proxy": "none"
       },
       "low_history_confidence": false,
-      "skew_change": -0.279,
+      "skew_change": 0.0,
       "skew_trend": "flat"
     },
     {
       "ticker": "SKHY",
-      "market_time": "2026-09-18 21:24:57",
-      "spot": 187.88,
+      "market_time": "2026-09-18 23:28:11",
+      "spot": 188.01,
       "price_change_pct": 2.465,
       "iv30_pct": 58.585,
       "skew_30d": {
@@ -215,36 +215,36 @@
           "strike": 200.0,
           "oi": 66621,
           "volume": 13161,
-          "distance_pct": 6.45,
-          "gamma_concentration": 5394377.0
+          "distance_pct": 6.38,
+          "gamma_concentration": 5401845.0
         },
         {
           "strike": 190.0,
           "oi": 14684,
           "volume": 24376,
-          "distance_pct": 1.13,
-          "gamma_concentration": 32350572.0
+          "distance_pct": 1.06,
+          "gamma_concentration": 32395356.0
         },
         {
           "strike": 220.0,
           "oi": 8702,
           "volume": 6582,
-          "distance_pct": 17.1,
-          "gamma_concentration": 976240.0
+          "distance_pct": 17.02,
+          "gamma_concentration": 977592.0
         },
         {
           "strike": 197.5,
           "oi": 7438,
           "volume": 1629,
-          "distance_pct": 5.12,
-          "gamma_concentration": 920570.0
+          "distance_pct": 5.05,
+          "gamma_concentration": 921845.0
         },
         {
           "strike": 250.0,
           "oi": 5981,
           "volume": 250,
-          "distance_pct": 33.06,
-          "gamma_concentration": 487802.0
+          "distance_pct": 32.97,
+          "gamma_concentration": 488478.0
         }
       ],
       "borrow": {
@@ -256,13 +256,13 @@
         "covering_proxy": "none"
       },
       "low_history_confidence": true,
-      "skew_change": -0.259,
+      "skew_change": 0.0,
       "skew_trend": "flat"
     },
     {
       "ticker": "MU",
-      "market_time": "2026-09-18 21:25:04",
-      "spot": 1014.3,
+      "market_time": "2026-09-18 23:28:18",
+      "spot": 1016.0456,
       "price_change_pct": 3.918,
       "iv30_pct": 58.726,
       "skew_30d": {
@@ -352,36 +352,36 @@
           "strike": 1100.0,
           "oi": 25459,
           "volume": 14937,
-          "distance_pct": 8.45,
-          "gamma_concentration": 35916388.0
+          "distance_pct": 8.26,
+          "gamma_concentration": 36040118.0
         },
         {
           "strike": 1200.0,
           "oi": 20147,
           "volume": 4912,
-          "distance_pct": 18.31,
-          "gamma_concentration": 17500890.0
+          "distance_pct": 18.1,
+          "gamma_concentration": 17561180.0
         },
         {
           "strike": 1050.0,
           "oi": 17813,
           "volume": 26235,
-          "distance_pct": 3.52,
-          "gamma_concentration": 35374414.0
+          "distance_pct": 3.34,
+          "gamma_concentration": 35496276.0
         },
         {
           "strike": 1500.0,
           "oi": 16734,
           "volume": 991,
-          "distance_pct": 47.89,
-          "gamma_concentration": 1894955.0
+          "distance_pct": 47.63,
+          "gamma_concentration": 1901483.0
         },
         {
           "strike": 1300.0,
           "oi": 13989,
           "volume": 1606,
-          "distance_pct": 28.17,
-          "gamma_concentration": 4726739.0
+          "distance_pct": 27.95,
+          "gamma_concentration": 4743023.0
         }
       ],
       "borrow": {
@@ -393,13 +393,13 @@
         "covering_proxy": "none"
       },
       "low_history_confidence": false,
-      "skew_change": 0.067,
+      "skew_change": 0.0,
       "skew_trend": "flat"
     },
     {
       "ticker": "NBIS",
-      "market_time": "2026-09-18 21:24:59",
-      "spot": 222.45,
+      "market_time": "2026-09-18 23:28:14",
+      "spot": 221.9469,
       "price_change_pct": 2.546,
       "iv30_pct": 77.627,
       "skew_30d": {
@@ -480,36 +480,36 @@
           "strike": 250.0,
           "oi": 17871,
           "volume": 9026,
-          "distance_pct": 12.38,
-          "gamma_concentration": 3295298.0
+          "distance_pct": 12.64,
+          "gamma_concentration": 3280409.0
         },
         {
           "strike": 240.0,
           "oi": 16471,
           "volume": 8268,
-          "distance_pct": 7.89,
-          "gamma_concentration": 3791791.0
+          "distance_pct": 8.13,
+          "gamma_concentration": 3774659.0
         },
         {
           "strike": 300.0,
           "oi": 15766,
           "volume": 5197,
-          "distance_pct": 34.86,
-          "gamma_concentration": 1621561.0
+          "distance_pct": 35.17,
+          "gamma_concentration": 1614235.0
         },
         {
           "strike": 230.0,
           "oi": 12178,
           "volume": 17697,
-          "distance_pct": 3.39,
-          "gamma_concentration": 3659768.0
+          "distance_pct": 3.63,
+          "gamma_concentration": 3643232.0
         },
         {
           "strike": 270.0,
           "oi": 10853,
           "volume": 3504,
-          "distance_pct": 21.38,
-          "gamma_concentration": 1354338.0
+          "distance_pct": 21.65,
+          "gamma_concentration": 1348218.0
         }
       ],
       "borrow": {
@@ -521,8 +521,8 @@
         "covering_proxy": "mild"
       },
       "low_history_confidence": false,
-      "skew_change": -1.176,
-      "skew_trend": "falling"
+      "skew_change": 0.0,
+      "skew_trend": "flat"
     }
   ],
   "methodology": {
