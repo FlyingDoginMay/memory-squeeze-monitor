@@ -1,13 +1,13 @@
 {
-  "generated_at": "2026-09-19T01:29:02.545997+00:00",
-  "market_time": "2026-09-19 01:28:22",
+  "generated_at": "2026-09-19T06:29:36.052030+00:00",
+  "market_time": "2026-09-19 03:44:26",
   "refresh_interval_minutes": 30,
   "tickers": [
     {
       "ticker": "SNDK",
-      "market_time": "2026-09-19 01:28:17",
+      "market_time": "2026-09-19 03:44:22",
       "spot": 1798.0,
-      "price_change_pct": 10.991,
+      "price_change_pct": 9.902,
       "iv30_pct": 70.206,
       "skew_30d": {
         "expiry": "2026-10-16/2026-10-23",
@@ -119,14 +119,14 @@
         "covering_proxy": "none"
       },
       "low_history_confidence": false,
-      "skew_change": -0.033,
+      "skew_change": 0.0,
       "skew_trend": "flat"
     },
     {
       "ticker": "SKHY",
-      "market_time": "2026-09-19 01:28:15",
+      "market_time": "2026-09-19 03:44:20",
       "spot": 187.91,
-      "price_change_pct": 2.465,
+      "price_change_pct": 2.405,
       "iv30_pct": 58.585,
       "skew_30d": {
         "expiry": "2026-10-16/2026-10-23",
@@ -238,14 +238,14 @@
         "covering_proxy": "none"
       },
       "low_history_confidence": true,
-      "skew_change": -0.214,
+      "skew_change": 0.0,
       "skew_trend": "flat"
     },
     {
       "ticker": "MU",
-      "market_time": "2026-09-19 01:28:22",
+      "market_time": "2026-09-19 03:44:26",
       "spot": 1017.79,
-      "price_change_pct": 3.918,
+      "price_change_pct": 3.77,
       "iv30_pct": 58.726,
       "skew_30d": {
         "expiry": "2026-10-16/2026-10-23",
@@ -366,14 +366,14 @@
         "covering_proxy": "none"
       },
       "low_history_confidence": false,
-      "skew_change": 0.103,
+      "skew_change": 0.0,
       "skew_trend": "flat"
     },
     {
       "ticker": "NBIS",
-      "market_time": "2026-09-19 01:28:18",
+      "market_time": "2026-09-19 03:44:22",
       "spot": 222.25,
-      "price_change_pct": 2.546,
+      "price_change_pct": 2.483,
       "iv30_pct": 77.627,
       "skew_30d": {
         "expiry": "2026-10-16/2026-10-23",
@@ -485,7 +485,7 @@
         "covering_proxy": "none"
       },
       "low_history_confidence": false,
-      "skew_change": -0.209,
+      "skew_change": 0.0,
       "skew_trend": "flat"
     }
   ],
