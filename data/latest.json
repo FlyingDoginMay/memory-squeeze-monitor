@@ -1,5 +1,5 @@
 {
-  "generated_at": "2026-09-19T20:04:50.672399+00:00",
+  "generated_at": "2026-09-19T22:23:52.941565+00:00",
   "market_time": "2026-09-19 03:44:26",
   "refresh_interval_minutes": 30,
   "tickers": [
@@ -230,11 +230,11 @@
         }
       ],
       "borrow": {
-        "as_of": "2026-09-17",
-        "fee_pct": 0.5404,
-        "available": 2200000,
-        "fee_change_5d_pp": 0.0106,
-        "available_change_5d_pct": -63.33,
+        "as_of": "2026-09-18",
+        "fee_pct": 0.5414,
+        "available": 1800000,
+        "fee_change_5d_pp": 0.0099,
+        "available_change_5d_pct": 5.88,
         "covering_proxy": "none"
       },
       "low_history_confidence": true,
