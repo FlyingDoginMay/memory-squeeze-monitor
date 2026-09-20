@@ -1,6 +1,6 @@
 {
-  "generated_at": "2026-09-20T20:21:30.933464+00:00",
-  "market_time": "2026-09-20 02:47:33",
+  "generated_at": "2026-09-20T22:36:29.511822+00:00",
+  "market_time": "2026-09-20 22:35:35",
   "refresh_interval_minutes": 30,
   "tickers": [
     {
@@ -243,7 +243,7 @@
     },
     {
       "ticker": "MU",
-      "market_time": "2026-09-20 02:07:11",
+      "market_time": "2026-09-20 22:35:35",
       "spot": 1017.79,
       "price_change_pct": 3.77,
       "iv30_pct": 58.766,
@@ -366,7 +366,7 @@
         "covering_proxy": "none"
       },
       "low_history_confidence": false,
-      "skew_change": 0.108,
+      "skew_change": 0.0,
       "skew_trend": "flat"
     },
     {
