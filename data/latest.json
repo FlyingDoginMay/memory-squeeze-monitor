@@ -1,11 +1,11 @@
 {
-  "generated_at": "2026-09-20T22:36:29.511822+00:00",
-  "market_time": "2026-09-20 22:35:35",
+  "generated_at": "2026-09-21T00:50:49.506880+00:00",
+  "market_time": "2026-09-21 00:02:08",
   "refresh_interval_minutes": 30,
   "tickers": [
     {
       "ticker": "SNDK",
-      "market_time": "2026-09-20 02:38:18",
+      "market_time": "2026-09-20 22:38:45",
       "spot": 1798.0,
       "price_change_pct": 9.902,
       "iv30_pct": 70.024,
@@ -119,7 +119,7 @@
         "covering_proxy": "none"
       },
       "low_history_confidence": false,
-      "skew_change": 0.002,
+      "skew_change": 0.0,
       "skew_trend": "flat"
     },
     {
@@ -243,7 +243,7 @@
     },
     {
       "ticker": "MU",
-      "market_time": "2026-09-20 22:35:35",
+      "market_time": "2026-09-20 23:54:33",
       "spot": 1017.79,
       "price_change_pct": 3.77,
       "iv30_pct": 58.766,
@@ -371,22 +371,22 @@
     },
     {
       "ticker": "NBIS",
-      "market_time": "2026-09-20 02:16:46",
+      "market_time": "2026-09-21 00:02:08",
       "spot": 222.25,
       "price_change_pct": 2.483,
       "iv30_pct": 77.579,
       "skew_30d": {
         "expiry": "2026-10-16/2026-10-23",
         "dte": 30,
-        "skew": -3.754,
-        "put_iv": 78.246,
-        "call_iv": 82.0,
+        "skew": -3.943,
+        "put_iv": 78.447,
+        "call_iv": 82.39,
         "method": "linear_interpolation"
       },
       "skew_term_structure": [
         {
           "expiry": "2026-10-02",
-          "dte": 12,
+          "dte": 11,
           "skew": -0.83,
           "put_iv": 76.24,
           "call_iv": 77.07,
@@ -395,7 +395,7 @@
         },
         {
           "expiry": "2026-10-09",
-          "dte": 19,
+          "dte": 18,
           "skew": -0.83,
           "put_iv": 77.43,
           "call_iv": 78.26,
@@ -404,7 +404,7 @@
         },
         {
           "expiry": "2026-10-16",
-          "dte": 26,
+          "dte": 25,
           "skew": -3.0,
           "put_iv": 77.44,
           "call_iv": 80.44,
@@ -413,7 +413,7 @@
         },
         {
           "expiry": "2026-10-23",
-          "dte": 33,
+          "dte": 32,
           "skew": -4.32,
           "put_iv": 78.85,
           "call_iv": 83.17,
@@ -422,7 +422,7 @@
         },
         {
           "expiry": "2026-10-30",
-          "dte": 40,
+          "dte": 39,
           "skew": -3.62,
           "put_iv": 77.24,
           "call_iv": 80.86,
@@ -431,7 +431,7 @@
         },
         {
           "expiry": "2026-11-20",
-          "dte": 61,
+          "dte": 60,
           "skew": -4.39,
           "put_iv": 86.38,
           "call_iv": 90.77,
@@ -485,7 +485,7 @@
         "covering_proxy": "none"
       },
       "low_history_confidence": false,
-      "skew_change": -0.028,
+      "skew_change": -0.189,
       "skew_trend": "flat"
     }
   ],
