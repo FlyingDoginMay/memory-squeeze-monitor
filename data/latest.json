@@ -1,26 +1,26 @@
 {
-  "generated_at": "2026-09-21T00:50:49.506880+00:00",
-  "market_time": "2026-09-21 00:02:08",
+  "generated_at": "2026-09-21T05:54:44.507179+00:00",
+  "market_time": "2026-09-21 01:06:56",
   "refresh_interval_minutes": 30,
   "tickers": [
     {
       "ticker": "SNDK",
-      "market_time": "2026-09-20 22:38:45",
+      "market_time": "2026-09-21 01:01:31",
       "spot": 1798.0,
       "price_change_pct": 9.902,
       "iv30_pct": 70.024,
       "skew_30d": {
         "expiry": "2026-10-16/2026-10-23",
         "dte": 30,
-        "skew": -2.434,
-        "put_iv": 70.187,
-        "call_iv": 72.621,
+        "skew": -2.433,
+        "put_iv": 70.321,
+        "call_iv": 72.754,
         "method": "linear_interpolation"
       },
       "skew_term_structure": [
         {
           "expiry": "2026-10-02",
-          "dte": 12,
+          "dte": 11,
           "skew": -4.42,
           "put_iv": 70.14,
           "call_iv": 74.56,
@@ -29,7 +29,7 @@
         },
         {
           "expiry": "2026-10-09",
-          "dte": 19,
+          "dte": 18,
           "skew": -2.96,
           "put_iv": 70.22,
           "call_iv": 73.18,
@@ -38,7 +38,7 @@
         },
         {
           "expiry": "2026-10-16",
-          "dte": 26,
+          "dte": 25,
           "skew": -2.44,
           "put_iv": 69.65,
           "call_iv": 72.09,
@@ -47,7 +47,7 @@
         },
         {
           "expiry": "2026-10-23",
-          "dte": 33,
+          "dte": 32,
           "skew": -2.43,
           "put_iv": 70.59,
           "call_iv": 73.02,
@@ -56,7 +56,7 @@
         },
         {
           "expiry": "2026-10-30",
-          "dte": 40,
+          "dte": 39,
           "skew": -2.75,
           "put_iv": 72.38,
           "call_iv": 75.13,
@@ -65,7 +65,7 @@
         },
         {
           "expiry": "2026-11-20",
-          "dte": 61,
+          "dte": 60,
           "skew": -2.53,
           "put_iv": 75.9,
           "call_iv": 78.43,
@@ -119,27 +119,27 @@
         "covering_proxy": "none"
       },
       "low_history_confidence": false,
-      "skew_change": 0.0,
+      "skew_change": 0.001,
       "skew_trend": "flat"
     },
     {
       "ticker": "SKHY",
-      "market_time": "2026-09-20 02:47:33",
+      "market_time": "2026-09-21 01:06:56",
       "spot": 187.91,
       "price_change_pct": 2.405,
       "iv30_pct": 58.594,
       "skew_30d": {
         "expiry": "2026-10-16/2026-10-23",
         "dte": 30,
-        "skew": -2.713,
-        "put_iv": 57.85,
-        "call_iv": 60.563,
+        "skew": -2.909,
+        "put_iv": 57.77,
+        "call_iv": 60.679,
         "method": "linear_interpolation"
       },
       "skew_term_structure": [
         {
           "expiry": "2026-10-02",
-          "dte": 12,
+          "dte": 11,
           "skew": -2.18,
           "put_iv": 60.18,
           "call_iv": 62.36,
@@ -148,7 +148,7 @@
         },
         {
           "expiry": "2026-10-09",
-          "dte": 19,
+          "dte": 18,
           "skew": -2.29,
           "put_iv": 59.68,
           "call_iv": 61.97,
@@ -157,7 +157,7 @@
         },
         {
           "expiry": "2026-10-16",
-          "dte": 26,
+          "dte": 25,
           "skew": -1.93,
           "put_iv": 58.17,
           "call_iv": 60.1,
@@ -166,7 +166,7 @@
         },
         {
           "expiry": "2026-10-23",
-          "dte": 33,
+          "dte": 32,
           "skew": -3.3,
           "put_iv": 57.61,
           "call_iv": 60.91,
@@ -175,7 +175,7 @@
         },
         {
           "expiry": "2026-10-30",
-          "dte": 40,
+          "dte": 39,
           "skew": -7.52,
           "put_iv": 58.23,
           "call_iv": 65.75,
@@ -184,7 +184,7 @@
         },
         {
           "expiry": "2026-11-20",
-          "dte": 61,
+          "dte": 60,
           "skew": -3.25,
           "put_iv": 62.42,
           "call_iv": 65.67,
@@ -238,7 +238,7 @@
         "covering_proxy": "none"
       },
       "low_history_confidence": true,
-      "skew_change": -0.03,
+      "skew_change": -0.196,
       "skew_trend": "flat"
     },
     {

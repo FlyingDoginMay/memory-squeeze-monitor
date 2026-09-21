@@ -12642,5 +12642,61 @@
       "available_change_5d_pct": -5.26,
       "covering_proxy": "none"
     }
+  },
+  {
+    "ticker": "SNDK",
+    "market_time": "2026-09-21 01:01:31",
+    "spot": 1798.0,
+    "skew_30d": {
+      "expiry": "2026-10-16/2026-10-23",
+      "dte": 30,
+      "skew": -2.433,
+      "put_iv": 70.321,
+      "call_iv": 72.754,
+      "method": "linear_interpolation"
+    },
+    "call_wall": {
+      "strike": 1800.0,
+      "oi": 3255,
+      "volume": 6284,
+      "distance_pct": 0.11,
+      "gamma_concentration": 17080843.0
+    },
+    "borrow": {
+      "as_of": "2026-09-18",
+      "fee_pct": 0.4298,
+      "available": 2300000,
+      "fee_change_5d_pp": 0.1798,
+      "available_change_5d_pct": 15.0,
+      "covering_proxy": "none"
+    }
+  },
+  {
+    "ticker": "SKHY",
+    "market_time": "2026-09-21 01:06:56",
+    "spot": 187.91,
+    "skew_30d": {
+      "expiry": "2026-10-16/2026-10-23",
+      "dte": 30,
+      "skew": -2.909,
+      "put_iv": 57.77,
+      "call_iv": 60.679,
+      "method": "linear_interpolation"
+    },
+    "call_wall": {
+      "strike": 200.0,
+      "oi": 9478,
+      "volume": 8258,
+      "distance_pct": 6.43,
+      "gamma_concentration": 4791791.0
+    },
+    "borrow": {
+      "as_of": "2026-09-18",
+      "fee_pct": 0.5414,
+      "available": 1800000,
+      "fee_change_5d_pp": 0.0099,
+      "available_change_5d_pct": 5.88,
+      "covering_proxy": "none"
+    }
   }
 ]
