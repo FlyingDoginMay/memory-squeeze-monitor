@@ -1,13 +1,13 @@
 {
-  "generated_at": "2026-09-22T01:00:31.221444+00:00",
-  "market_time": "2026-09-22 01:00:22",
+  "generated_at": "2026-09-22T06:33:54.354148+00:00",
+  "market_time": "2026-09-22 03:56:41",
   "refresh_interval_minutes": 30,
   "tickers": [
     {
       "ticker": "SNDK",
-      "market_time": "2026-09-22 00:57:22",
+      "market_time": "2026-09-22 03:56:41",
       "spot": 1775.2458,
-      "price_change_pct": -1.405,
+      "price_change_pct": -1.425,
       "iv30_pct": 72.087,
       "skew_30d": {
         "expiry": "2026-10-16/2026-10-23",
@@ -119,12 +119,12 @@
         "covering_proxy": "none"
       },
       "low_history_confidence": false,
-      "skew_change": 0.805,
+      "skew_change": 0.0,
       "skew_trend": "flat"
     },
     {
       "ticker": "SKHY",
-      "market_time": "2026-09-22 00:58:51",
+      "market_time": "2026-09-22 03:20:28",
       "spot": 190.84,
       "price_change_pct": 0.725,
       "iv30_pct": 59.654,
@@ -238,14 +238,14 @@
         "covering_proxy": "none"
       },
       "low_history_confidence": true,
-      "skew_change": 0.4,
+      "skew_change": 0.0,
       "skew_trend": "flat"
     },
     {
       "ticker": "MU",
-      "market_time": "2026-09-22 01:00:22",
+      "market_time": "2026-09-22 03:56:21",
       "spot": 1044.26,
-      "price_change_pct": 2.772,
+      "price_change_pct": 2.697,
       "iv30_pct": 61.671,
       "skew_30d": {
         "expiry": "2026-10-16/2026-10-23",
@@ -357,14 +357,14 @@
         "covering_proxy": "none"
       },
       "low_history_confidence": false,
-      "skew_change": 0.162,
+      "skew_change": 0.0,
       "skew_trend": "flat"
     },
     {
       "ticker": "NBIS",
-      "market_time": "2026-09-22 00:57:51",
+      "market_time": "2026-09-22 03:56:40",
       "spot": 234.15,
-      "price_change_pct": 4.142,
+      "price_change_pct": 3.978,
       "iv30_pct": 81.989,
       "skew_30d": {
         "expiry": "2026-10-16/2026-10-23",
@@ -476,7 +476,7 @@
         "covering_proxy": "none"
       },
       "low_history_confidence": false,
-      "skew_change": -0.196,
+      "skew_change": 0.0,
       "skew_trend": "flat"
     }
   ],
