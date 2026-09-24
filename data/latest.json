@@ -1,5 +1,5 @@
 {
-  "generated_at": "2026-09-23T23:51:21.968927+00:00",
+  "generated_at": "2026-09-24T03:15:40.317352+00:00",
   "market_time": "2026-09-23 03:59:14",
   "refresh_interval_minutes": 30,
   "tickers": [
@@ -113,11 +113,11 @@
         }
       ],
       "borrow": {
-        "as_of": "2026-09-22",
-        "fee_pct": 0.5978,
-        "available": 1800000,
-        "fee_change_5d_pp": 0.3478,
-        "available_change_5d_pct": -28.0,
+        "as_of": "2026-09-23",
+        "fee_pct": 0.25,
+        "available": 2300000,
+        "fee_change_5d_pp": -0.0079,
+        "available_change_5d_pct": 0.0,
         "covering_proxy": "none"
       },
       "low_history_confidence": false,
@@ -234,11 +234,11 @@
         }
       ],
       "borrow": {
-        "as_of": "2026-09-22",
-        "fee_pct": 1.0243,
-        "available": 9300000,
-        "fee_change_5d_pp": 0.4846,
-        "available_change_5d_pct": 287.5,
+        "as_of": "2026-09-23",
+        "fee_pct": 0.6457,
+        "available": 2700000,
+        "fee_change_5d_pp": 0.1057,
+        "available_change_5d_pct": 17.39,
         "covering_proxy": "none"
       },
       "low_history_confidence": true,
@@ -355,10 +355,10 @@
         }
       ],
       "borrow": {
-        "as_of": "2026-09-22",
-        "fee_pct": 0.25,
+        "as_of": "2026-09-23",
+        "fee_pct": 0.4081,
         "available": 10000000,
-        "fee_change_5d_pp": 0.0,
+        "fee_change_5d_pp": 0.1581,
         "available_change_5d_pct": 0.0,
         "covering_proxy": "none"
       },
@@ -476,11 +476,11 @@
         }
       ],
       "borrow": {
-        "as_of": "2026-09-22",
-        "fee_pct": 0.4817,
-        "available": 7500000,
-        "fee_change_5d_pp": 0.0391,
-        "available_change_5d_pct": 2.74,
+        "as_of": "2026-09-23",
+        "fee_pct": 0.478,
+        "available": 8200000,
+        "fee_change_5d_pp": 0.0417,
+        "available_change_5d_pct": 9.33,
         "covering_proxy": "none"
       },
       "low_history_confidence": false,
