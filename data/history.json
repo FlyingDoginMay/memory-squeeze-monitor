@@ -14616,5 +14616,117 @@
       "available_change_5d_pct": 4.0,
       "covering_proxy": "none"
     }
+  },
+  {
+    "ticker": "SNDK",
+    "market_time": "2026-09-25 19:25:16",
+    "spot": 1781.51,
+    "skew_30d": {
+      "expiry": "2026-10-23/2026-10-30",
+      "dte": 30,
+      "skew": -3.681,
+      "put_iv": 68.931,
+      "call_iv": 72.613,
+      "method": "linear_interpolation"
+    },
+    "call_wall": {
+      "strike": 2000.0,
+      "oi": 9749,
+      "volume": 7380,
+      "distance_pct": 12.26,
+      "gamma_concentration": 17925815.0
+    },
+    "borrow": {
+      "as_of": "2026-09-24",
+      "fee_pct": 0.25,
+      "available": 1900000,
+      "fee_change_5d_pp": -0.0042,
+      "available_change_5d_pct": -24.0,
+      "covering_proxy": "none"
+    }
+  },
+  {
+    "ticker": "SKHY",
+    "market_time": "2026-09-25 19:25:11",
+    "spot": 191.91,
+    "skew_30d": {
+      "expiry": "2026-10-23/2026-10-30",
+      "dte": 30,
+      "skew": -2.739,
+      "put_iv": 56.773,
+      "call_iv": 59.511,
+      "method": "linear_interpolation"
+    },
+    "call_wall": {
+      "strike": 200.0,
+      "oi": 15130,
+      "volume": 4534,
+      "distance_pct": 4.22,
+      "gamma_concentration": 6568009.0
+    },
+    "borrow": {
+      "as_of": "2026-09-24",
+      "fee_pct": 0.9164,
+      "available": 850000,
+      "fee_change_5d_pp": 0.376,
+      "available_change_5d_pct": -61.36,
+      "covering_proxy": "none"
+    }
+  },
+  {
+    "ticker": "MU",
+    "market_time": "2026-09-25 19:25:13",
+    "spot": 1085.52,
+    "skew_30d": {
+      "expiry": "2026-10-23/2026-10-30",
+      "dte": 30,
+      "skew": -1.964,
+      "put_iv": 60.087,
+      "call_iv": 62.051,
+      "method": "linear_interpolation"
+    },
+    "call_wall": {
+      "strike": 1200.0,
+      "oi": 31055,
+      "volume": 18053,
+      "distance_pct": 10.55,
+      "gamma_concentration": 45010046.0
+    },
+    "borrow": {
+      "as_of": "2026-09-24",
+      "fee_pct": 0.25,
+      "available": 10000000,
+      "fee_change_5d_pp": 0.0,
+      "available_change_5d_pct": 0.0,
+      "covering_proxy": "none"
+    }
+  },
+  {
+    "ticker": "NBIS",
+    "market_time": "2026-09-25 19:25:07",
+    "spot": 238.465,
+    "skew_30d": {
+      "expiry": "2026-10-23/2026-10-30",
+      "dte": 30,
+      "skew": -2.637,
+      "put_iv": 75.38,
+      "call_iv": 78.017,
+      "method": "linear_interpolation"
+    },
+    "call_wall": {
+      "strike": 300.0,
+      "oi": 19456,
+      "volume": 3644,
+      "distance_pct": 25.8,
+      "gamma_concentration": 4132426.0
+    },
+    "borrow": {
+      "as_of": "2026-09-24",
+      "fee_pct": 0.4833,
+      "available": 7800000,
+      "fee_change_5d_pp": 0.0524,
+      "available_change_5d_pct": 4.0,
+      "covering_proxy": "none"
+    }
   }
 ]
