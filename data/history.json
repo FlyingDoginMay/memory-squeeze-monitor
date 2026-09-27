@@ -15120,5 +15120,89 @@
       "available_change_5d_pct": 8.33,
       "covering_proxy": "mild"
     }
+  },
+  {
+    "ticker": "SNDK",
+    "market_time": "2026-09-27 00:31:44",
+    "spot": 1772.04,
+    "skew_30d": {
+      "expiry": "2026-10-23/2026-10-30",
+      "dte": 30,
+      "skew": -3.149,
+      "put_iv": 70.56,
+      "call_iv": 73.709,
+      "method": "linear_interpolation"
+    },
+    "call_wall": {
+      "strike": 2000.0,
+      "oi": 4937,
+      "volume": 5641,
+      "distance_pct": 12.86,
+      "gamma_concentration": 17735744.0
+    },
+    "borrow": {
+      "as_of": "2026-09-25",
+      "fee_pct": 0.25,
+      "available": 2400000,
+      "fee_change_5d_pp": -0.1798,
+      "available_change_5d_pct": 4.35,
+      "covering_proxy": "mild"
+    }
+  },
+  {
+    "ticker": "MU",
+    "market_time": "2026-09-26 22:26:02",
+    "spot": 1085.02,
+    "skew_30d": {
+      "expiry": "2026-10-23/2026-10-30",
+      "dte": 30,
+      "skew": -3.13,
+      "put_iv": 59.881,
+      "call_iv": 63.011,
+      "method": "linear_interpolation"
+    },
+    "call_wall": {
+      "strike": 1200.0,
+      "oi": 20950,
+      "volume": 16264,
+      "distance_pct": 10.6,
+      "gamma_concentration": 42693050.0
+    },
+    "borrow": {
+      "as_of": "2026-09-25",
+      "fee_pct": 0.25,
+      "available": 10000000,
+      "fee_change_5d_pp": 0.0,
+      "available_change_5d_pct": 0.0,
+      "covering_proxy": "none"
+    }
+  },
+  {
+    "ticker": "NBIS",
+    "market_time": "2026-09-27 00:13:37",
+    "spot": 238.38,
+    "skew_30d": {
+      "expiry": "2026-10-23/2026-10-30",
+      "dte": 30,
+      "skew": -5.74,
+      "put_iv": 74.497,
+      "call_iv": 80.237,
+      "method": "linear_interpolation"
+    },
+    "call_wall": {
+      "strike": 300.0,
+      "oi": 16838,
+      "volume": 4479,
+      "distance_pct": 25.85,
+      "gamma_concentration": 4084463.0
+    },
+    "borrow": {
+      "as_of": "2026-09-25",
+      "fee_pct": 0.445,
+      "available": 7800000,
+      "fee_change_5d_pp": -0.0196,
+      "available_change_5d_pct": 8.33,
+      "covering_proxy": "mild"
+    }
   }
 ]
