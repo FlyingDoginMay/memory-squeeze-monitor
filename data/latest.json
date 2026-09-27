@@ -1,6 +1,6 @@
 {
-  "generated_at": "2026-09-27T06:14:41.727829+00:00",
-  "market_time": "2026-09-27 04:41:58",
+  "generated_at": "2026-09-27T12:17:26.558077+00:00",
+  "market_time": "2026-09-27 11:17:46",
   "refresh_interval_minutes": 30,
   "tickers": [
     {
@@ -115,7 +115,7 @@
     },
     {
       "ticker": "SKHY",
-      "market_time": "2026-09-27 01:31:57",
+      "market_time": "2026-09-27 11:17:46",
       "spot": 191.28,
       "price_change_pct": 2.709,
       "iv30_pct": 57.028,
@@ -229,7 +229,7 @@
         "covering_proxy": "none"
       },
       "low_history_confidence": true,
-      "skew_change": 0.234,
+      "skew_change": 0.0,
       "skew_trend": "flat"
     },
     {
