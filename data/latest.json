@@ -1,11 +1,11 @@
 {
-  "generated_at": "2026-11-08T18:39:36.299074+00:00",
-  "market_time": "2026-11-08 01:38:53",
+  "generated_at": "2026-11-08T22:39:40.416116+00:00",
+  "market_time": "2026-11-08 22:30:41",
   "refresh_interval_minutes": 30,
   "tickers": [
     {
       "ticker": "SNDK",
-      "market_time": "2026-11-08 01:03:00",
+      "market_time": "2026-11-08 22:30:41",
       "spot": 841.46,
       "price_change_pct": 3.429,
       "iv30_pct": 100.634,
@@ -119,7 +119,7 @@
         "covering_proxy": "none"
       },
       "low_history_confidence": false,
-      "skew_change": -0.32,
+      "skew_change": 0.0,
       "skew_trend": "flat"
     },
     {
@@ -243,7 +243,7 @@
     },
     {
       "ticker": "MU",
-      "market_time": "2026-11-08 01:30:08",
+      "market_time": "2026-11-08 22:24:46",
       "spot": 694.79,
       "price_change_pct": 4.871,
       "iv30_pct": 77.59,
@@ -375,7 +375,7 @@
         "covering_proxy": "none"
       },
       "low_history_confidence": false,
-      "skew_change": -0.022,
+      "skew_change": 0.0,
       "skew_trend": "flat"
     },
     {
