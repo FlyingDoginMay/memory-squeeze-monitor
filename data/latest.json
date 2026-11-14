@@ -1,6 +1,6 @@
 {
-  "generated_at": "2026-11-14T07:50:50.548690+00:00",
-  "market_time": "2026-11-14 07:17:10",
+  "generated_at": "2026-11-14T14:46:17.183464+00:00",
+  "market_time": "2026-11-14 11:14:47",
   "refresh_interval_minutes": 30,
   "tickers": [
     {
@@ -380,7 +380,7 @@
     },
     {
       "ticker": "NBIS",
-      "market_time": "2026-11-14 07:17:10",
+      "market_time": "2026-11-14 11:14:47",
       "spot": 112.8,
       "price_change_pct": -11.011,
       "iv30_pct": 99.847,
@@ -503,7 +503,7 @@
         "covering_proxy": "none"
       },
       "low_history_confidence": false,
-      "skew_change": -0.048,
+      "skew_change": 0.0,
       "skew_trend": "flat"
     }
   ],
