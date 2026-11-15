@@ -1,26 +1,26 @@
 {
-  "generated_at": "2026-11-15T19:14:15.480256+00:00",
-  "market_time": "2026-11-15 16:43:48",
+  "generated_at": "2026-11-15T23:27:57.733011+00:00",
+  "market_time": "2026-11-15 22:31:28",
   "refresh_interval_minutes": 30,
   "tickers": [
     {
       "ticker": "SNDK",
-      "market_time": "2026-11-14 23:44:14",
+      "market_time": "2026-11-15 22:31:28",
       "spot": 865.23,
       "price_change_pct": -5.926,
       "iv30_pct": 88.738,
       "skew_30d": {
         "expiry": "2026-12-11/2026-12-18",
         "dte": 30,
-        "skew": 7.457,
-        "put_iv": 92.537,
-        "call_iv": 85.08,
+        "skew": 7.613,
+        "put_iv": 92.303,
+        "call_iv": 84.69,
         "method": "linear_interpolation"
       },
       "skew_term_structure": [
         {
           "expiry": "2026-11-27",
-          "dte": 13,
+          "dte": 12,
           "skew": 11.4,
           "put_iv": 97.97,
           "call_iv": 86.57,
@@ -29,7 +29,7 @@
         },
         {
           "expiry": "2026-12-04",
-          "dte": 20,
+          "dte": 19,
           "skew": 6.01,
           "put_iv": 94.41,
           "call_iv": 88.4,
@@ -38,7 +38,7 @@
         },
         {
           "expiry": "2026-12-11",
-          "dte": 27,
+          "dte": 26,
           "skew": 6.99,
           "put_iv": 93.24,
           "call_iv": 86.25,
@@ -47,7 +47,7 @@
         },
         {
           "expiry": "2026-12-18",
-          "dte": 34,
+          "dte": 33,
           "skew": 8.08,
           "put_iv": 91.6,
           "call_iv": 83.52,
@@ -56,7 +56,7 @@
         },
         {
           "expiry": "2026-12-24",
-          "dte": 40,
+          "dte": 39,
           "skew": 8.25,
           "put_iv": 89.98,
           "call_iv": 81.73,
@@ -65,7 +65,7 @@
         },
         {
           "expiry": "2027-01-15",
-          "dte": 62,
+          "dte": 61,
           "skew": 5.3,
           "put_iv": 87.65,
           "call_iv": 82.35,
@@ -119,7 +119,7 @@
         "covering_proxy": "none"
       },
       "low_history_confidence": false,
-      "skew_change": 0.0,
+      "skew_change": 0.156,
       "skew_trend": "flat"
     },
     {
@@ -243,7 +243,7 @@
     },
     {
       "ticker": "MU",
-      "market_time": "2026-11-15 08:45:01",
+      "market_time": "2026-11-15 22:26:12",
       "spot": 761.2,
       "price_change_pct": -2.586,
       "iv30_pct": 68.012,
